@@ -67,3 +67,17 @@ app.get('/v1/explorers/:id',(req,res)=>{
 // parámetros que se guardan en la variable de request "req"
 
 
+
+
+//Creando un endpoint post que se encargue de actualizar un explorer
+app.post('/v1/explorers',(req,res)=>{
+    console.log(`API Explorers POST request ${new Date()}`);
+    const requestBody = req.body //Parámetros del cliente
+    console.log(`Lo que recibimos del cliente fue: ${requestBody}`)
+
+    res.status(200).json(
+        {message: "Created!!"}
+    )
+})
+//No se crea un explorer, pero lo que sea que nos mande el cliente lo recibimos aquí 
+//y podríamos crear el objeto si problema
