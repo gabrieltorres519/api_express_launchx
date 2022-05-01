@@ -1,0 +1,22 @@
+{
+  "name": "api_express_launchx",
+  "version": "1.0.0",
+  "description": "primer_api_launchx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrieltorres519/api_express_launchx.git"
+  },
+  "author": "gabrieltorres519",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrieltorres519/api_express_launchx/issues"
+  },
+  "homepage": "https://github.com/gabrieltorres519/api_express_launchx#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
