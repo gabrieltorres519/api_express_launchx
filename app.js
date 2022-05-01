@@ -81,3 +81,17 @@ app.post('/v1/explorers',(req,res)=>{
 })
 //No se crea un explorer, pero lo que sea que nos mande el cliente lo recibimos aquí 
 //y podríamos crear el objeto si problema
+
+
+
+
+//Creando un endpoint PUT para actualizar un explorer
+app.put('/v1/explorers/:id',(req,res)=>{
+    console.log(`API Explorers PUT request ${new Date()}`);
+    console.log(`Update explorer with id ${req.params.id}`);
+    const requestBody = req.body //Parámetros del cliente
+    res.status(200).json({
+        message: "Updated!!"
+    })
+})
+// En la consola del proyecto express veremos que nos llega el id que se introduzca en postman desde la url de la petición PUT
