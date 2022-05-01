@@ -95,3 +95,17 @@ app.put('/v1/explorers/:id',(req,res)=>{
     })
 })
 // En la consola del proyecto express veremos que nos llega el id que se introduzca en postman desde la url de la petición PUT
+
+
+
+
+// Creando endpoint DELETE para eliminar un explorer
+app.delete('/v1/explorers/:id',(req,res)=>{
+    console.log(`API Explorers DELETE request ${new Date()}`);
+    console.log(`Delete explorer with id ${req.params.id}`);
+    const requestBody = req.body //Paŕametros del cliente
+    res.status(200).json({
+        message: "Deleted!!"
+    })
+})
+//Igualmente no borra nada, solo recibimos el id
