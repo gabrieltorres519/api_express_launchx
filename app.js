@@ -49,3 +49,21 @@ app.get('/v1/explorers',(req,res)=>{
     res.status(200).json(explorers);
 
 })
+
+
+
+//Creando un endpoint con GET para que regrese un explorer según el id
+app.get('/v1/explorers/:id',(req,res)=>{
+    console.log(`API explorers GET request ${new Date()}`);
+    console.log(`Getting explorer with id ${req.params.id}`);
+    const explorer = {
+        id: 1,
+        name: "Gabriel Torres"
+    }
+    res.status(200).json(explorer)
+})
+// Con esto podemos ver en la consola del proyecto de express que nos imprime Getting explorer with id x,
+// esto quere decir que desde postman que hacemos la petición GET con el explorers/1 recibimos el id como
+// parámetros que se guardan en la variable de request "req"
+
+
